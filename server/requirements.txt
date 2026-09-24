@@ -1,0 +1,11 @@
+# CUDA build for the detected NVIDIA GPU; CPU inference also supported.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128
+torchvision==0.22.1+cu128
+ultralytics==8.3.221
+huggingface-hub==0.35.3
+PyYAML==6.0.3
+Pillow==11.3.0
+remotezip==0.12.6
+Flask==3.1.2
+waitress==3.0.2

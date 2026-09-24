@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Цвета страницы — меняйте здесь, чтобы обновить весь интерфейс */
+:root {
+  --bg: #f9f8f8;
+  --surface: #f5f3f3;
+  --input: #ffffff;
+  --border: #e8e6e6;
+  --text: #1a1a1a;
+  --text-muted: #9a9a9a;
+  --text-label: #8a8a8a;
+  --button: #2f2f2f;
+  --button-text: #ffffff;
+  --button-disabled: #ececec;
+  --accent: #22c55e;
+  --accent-text: #ffffff;
+  --success: #22c55e;
+  --success-bg: #e8f8ee;
+  --danger: #ef4444;
+  --danger-bg: #fde8e8;
+  --processing-bg: #eef1f4;
+}
+
+/* Подключаем цвета к Tailwind */
+@theme inline {
+  --color-page: var(--bg);
+  --color-surface: var(--surface);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-main: var(--text);
+  --color-muted: var(--text-muted);
+  --color-label: var(--text-label);
+  --color-button: var(--button);
+  --color-button-text: var(--button-text);
+  --color-button-disabled: var(--button-disabled);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
+  --color-processing: var(--processing-bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
