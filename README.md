@@ -70,7 +70,7 @@ Frontend отправляет запросы на `/api/*`. Правило в `n
 ## Структура проекта
 
 ```text
-equipment-control/
+NOVA-Ai/
 ├── app/                         # страницы и React-компоненты
 │   ├── create-task/page.tsx     # создание даты и плана техники
 │   ├── results/page.tsx         # сохранённая статистика и графики
@@ -108,7 +108,7 @@ equipment-control/
 ### 1. Распаковать или клонировать проект
 
 ```powershell
-cd "путь\к\equipment-control"
+cd "путь\к\NOVA-AI"
 ```
 
 ### 2. Установить frontend-зависимости
@@ -136,7 +136,7 @@ python -m venv .venv
 ### Окно 1 - backend
 
 ```powershell
-cd "путь\к\equipment-control\server"
+cd "путь\к\NOVA-Ai\server"
 python.exe server.py --weights best.pt --database equipment.db --port 8000
 ```
 
@@ -163,7 +163,7 @@ curl.exe http://127.0.0.1:8000/health
 ### Окно 2 - frontend
 
 ```powershell
-cd "путь\к\equipment-control"
+cd "путь\к\NOVA-Ai"
 bun run dev
 ```
 
@@ -279,6 +279,7 @@ curl.exe -F "file=@D:\путь\фото.jpg" http://127.0.0.1:8000/detect
 ## Ограничения прототипа
 
 - поддерживаются только перечисленные 6 классов;
+- ИИ часто допускается ошибка, из-за нехватки датасетов и времени на обучение 
 - бульдозеры, катки и другие классы пока не распознаются;
 - анализируется отдельная фотография, а не видеопоток;
 - приложение не отслеживает уникальные машины и не фиксирует въезд через ворота;
